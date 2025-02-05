@@ -54,8 +54,8 @@ function Day({
   }, [completed]);
   return (
     <div className="flex flex-col gap-2 items-center w-full">
-      <div className="w-[20px] h-[20px]">{icon}</div>
-      <div className="">{label}</div>
+      {/* <div className="w-[20px] h-[20px]">{icon}</div>
+      <div className="">{label}</div> */}
     </div>
   );
 }

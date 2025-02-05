@@ -46,13 +46,13 @@ export default function ClientPage() {
 
       {/* Desktop View */}
       <div className="hidden md:block md:grow-[2] md:basis-0 md:min-w-200px">
-        <Card>
-          <StreakCard streakData={streakData} />
+        {/* <Card> */}
+          {/* <StreakCard streakData={streakData} />
           <PastSessionsList
             sessions={sessions}
             onSessionSelect={setSelectedSessionId}
-          />
-        </Card>
+          /> */}
+        {/* </Card> */}
       </div>
 
       {/* Right Column - Main Content (Desktop) */}
