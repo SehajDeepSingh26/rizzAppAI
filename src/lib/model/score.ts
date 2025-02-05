@@ -1,0 +1,23 @@
+export type Score = {
+  rizz_score: number;
+  wit: "poor" | "fair" | "good";
+  humor: "poor" | "fair" | "good";
+  confidence: "poor" | "fair" | "good";
+  seductiveness: "poor" | "fair" | "good";
+  flow: "poor" | "fair" | "good";
+  kindness: "poor" | "fair" | "good";
+  wit_summary: string;
+  humor_summary: string;
+  confidence_summary: string;
+  seductiveness_summary: string;
+  flow_summary: string;
+  kindness_summary: string;
+  overall_summary: string;
+  good_1: string;
+  good_2: string;
+  good_3: string;
+  improve_1: string;
+  improve_2: string;
+  improve_3: string;
+  notes: string;
+};

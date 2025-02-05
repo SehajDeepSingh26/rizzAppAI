@@ -1,0 +1,8 @@
+{
+  "extends": ["next"],
+  "plugins": ["import"],
+  "rules": {
+    "import/no-duplicates": ["error"],
+    "import/newline-after-import": ["error", { "count": 1 }]
+  }
+}
