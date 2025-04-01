@@ -90,6 +90,7 @@ export class ScoreController {
         messages: jsonFixMesages,
       });
       const fixedJsonString = jsonFixResult.choices[0].message.content;
+      console.log("-=-=-=-=-=--=-=-=-=-=-===-=-=", fixedJsonString)
       if (!fixedJsonString) {
         throw new Error("Failed to fix JSON");
       }

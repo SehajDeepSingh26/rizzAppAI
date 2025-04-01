@@ -29,7 +29,7 @@ export function ClientPage({ persona, scenario }: Props) {
   }>(null);
 
   useEffect(() => {
-    if (credits > 0) {
+    if (credits >= 0) {
       setConnectionOpts({
         token: usageToken,
         sessionConnectOptions: { persona: persona.id, scenario: scenario.id },
@@ -95,7 +95,7 @@ export function ClientSessionPageInner({
             Talk for at least 10 messages to get your rizz score
           </div>
           <div className="h-[40px] w-[200px] flex items-center justify-center">
-            {messages.length < MESSAGES_BEFORE_RIZZ ? (
+            {messages.length < 1 ? (
               <ProgressBar
                 numerator={messages.length}
                 denominator={MESSAGES_BEFORE_RIZZ}
@@ -103,11 +103,11 @@ export function ClientSessionPageInner({
             ) : (
               <BorderButton
                 onClick={() => {
-                  if (credits <= 0) {
-                    console.error("No credits available");
-                    setShowPaywall({ session: id });
-                    return;
-                  }
+                //   if (credits < 0) {
+                //     console.error("No credits available");
+                //     setShowPaywall({ session: id });
+                //     return;
+                //   }
                   if (!id) {
                     console.error("No session ID available");
                     toast.error("Session not ready yet, please try again");

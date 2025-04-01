@@ -91,6 +91,7 @@ export class CreditsController {
             }
           : undefined,
     });
+    console.log("-------------------price: ", price)
     return session;
   }
 
@@ -154,7 +155,7 @@ export class CreditsController {
       ).data;
       latestCreditDate = new Date(latestLedgerEntry.created_at);
     } catch (e: any) {
-      console.error("Failed to get latest tracked charge", e.message);
+    //   console.error("Failed to get latest tracked charge", e.message);
     }
 
     // First apply any credits that have been paid for
